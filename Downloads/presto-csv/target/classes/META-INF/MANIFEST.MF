@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: presto-csv
+Implementation-Version: 
+Built-By: mac
+Specification-Title: presto-csv
+Implementation-Vendor-Id: io.prestosql
+Build-Time: 
+Git-Commit-Id: 
+Build-Jdk: 1.8.0_231
+Specification-Version: 325
+Created-By: Maven Integration for Eclipse
+
