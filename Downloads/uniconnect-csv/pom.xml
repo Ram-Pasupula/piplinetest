@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+ <parent>
+		<groupId>io.prestosql</groupId>
+		<artifactId>presto-root</artifactId>
+		<version>325</version>
+	</parent>
+
+	<artifactId>presto-csv</artifactId>
+	<name>presto-csv</name>
+	<description>presto - CSV Connector</description>
+	<packaging>presto-plugin</packaging>
+	<developers>
+		<developer>
+			<name>Ram PAsupula</name>
+			
+		</developer>
+	</developers>
+
+	<properties>
+		<air.main.basedir>${project.parent.basedir}</air.main.basedir>
+		<air.check.fail-checkstyle>false</air.check.fail-checkstyle>
+		<air.check.skip-checkstyle>true</air.check.skip-checkstyle>
+		<air.check.fail-license>false</air.check.fail-license>
+		<air.check.skip-license>true</air.check.skip-license>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>io.prestosql</groupId>
+			<artifactId>presto-base-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.relique.jdbc</groupId>
+			<artifactId>csv-jdbc</artifactId>
+			<version>1.0.31</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>configuration</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>com.google.guava</groupId> -->
+		<!-- <artifactId>guava</artifactId> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+		</dependency>
+
+		<!-- UniConnect SPI -->
+		<dependency>
+			<groupId>io.prestosql</groupId>
+			<artifactId>presto-spi</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>slice</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>units</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjdk.jol</groupId>
+			<artifactId>jol-core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
