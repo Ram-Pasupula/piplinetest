@@ -9,7 +9,6 @@ package com.test.pipeline;
  */
 public class TestPipeline {
 	
-
 	/**
 	 * @param args
 	 */
